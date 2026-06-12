@@ -14,4 +14,4 @@
 
 ## Tampilan Web
 
-![tampilan-web](../Dokumentasi/web.png)]
+![tampilan-web](../Dokumentasi/web.png)
