@@ -1,0 +1,193 @@
+body{
+    background:#07101f;
+    color:white;
+    font-family:'Barlow Condensed',sans-serif;
+}
+
+.container{
+    display:flex;
+}
+
+.sidebar{
+    width:260px;
+    min-height:100vh;
+    background:#0d1528;
+    padding:25px;
+}
+
+.sidebar-logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:40px;
+}
+
+.sidebar-logo img{
+    width:40px;
+}
+
+.sidebar-logo span{
+    color:#ffc400;
+    font-weight:700;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.sidebar nav a{
+    text-decoration:none;
+    color:white;
+    padding:12px;
+    border-radius:10px;
+}
+
+.sidebar nav a.active{
+    background:#1b2644;
+}
+
+.content{
+    flex:1;
+    padding:30px;
+}
+
+.page-header{
+    margin-bottom:25px;
+}
+
+.page-header p{
+    color:#9aa8c4;
+}
+
+.profile-card{
+    background:#10182f;
+    border-radius:15px;
+    padding:30px;
+}
+
+.avatar-section{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.avatar{
+    width:150px;
+    height:150px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    background:#1b2644;
+}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+#profileImage{
+    display:none;
+}
+
+.upload-btn{
+    display:inline-block;
+
+    margin-top:15px;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    background:#ffc400;
+
+    color:black;
+
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+.upload-btn:hover{
+    opacity:.9;
+}
+
+.avatar-section h2{
+    margin-top:20px;
+}
+
+.avatar-section span{
+    color:#ffc400;
+}
+
+.profile-form{
+    max-width:800px;
+    margin:auto;
+}
+
+.row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+}
+
+.form-group input{
+    width:100%;
+    height:50px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#1b2644;
+
+    color:white;
+
+    padding:0 15px;
+}
+
+.form-group input[readonly]{
+    opacity:.7;
+    cursor:not-allowed;
+}
+
+hr{
+    border:1px solid #1b2644;
+    margin:25px 0;
+}
+
+.save-btn{
+    width:100%;
+    height:55px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #ff4655,
+        #6f52ff
+    );
+
+    color:white;
+    font-size:18px;
+    font-weight:700;
+
+    cursor:pointer;
+}

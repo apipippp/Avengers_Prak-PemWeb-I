@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Profile | Avengers WikiVerse</title>
+
+<link rel="stylesheet" href="../../css/global.css?v=20260612-34">
+<link rel="stylesheet" href="./my-profile.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <img
+            src="../../assets/images/logo/logoo.jpg"
+            alt="Logo">
+
+            <span>
+                AVENGERS WIKIVERSE
+            </span>
+
+        </div>
+
+        <nav>
+
+            <a href="../dashboard/dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="../heroes-wiki/heroes-wiki.html">
+                Heroes Wiki
+            </a>
+
+            <a href="../movie-archive/movie-archive.html">
+                Movie Archive
+            </a>
+
+            <a href="../community-room/community-room.html">
+                Community Room
+            </a>
+
+            <a class="active" href="#">
+                My Profile
+            </a>
+
+            <a href="../user-settings/user-settings.html">
+                Settings
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <!-- CONTENT -->
+
+    <main class="content">
+
+        <div class="page-header">
+
+            <h1>
+                My Profile
+            </h1>
+
+            <p>
+                Manage your Avengers WikiVerse account
+            </p>
+
+        </div>
+
+        <div class="profile-card">
+
+            <!-- PROFILE PHOTO -->
+
+            <div class="avatar-section">
+
+                <div class="avatar">
+
+                    <img
+                    id="previewImage"
+                    src="../../assets/images/user-profile/profile-default.png"
+                    alt="Profile Photo">
+
+                </div>
+
+                <input
+                type="file"
+                id="profileImage"
+                accept="image/png,image/jpeg,image/jpg">
+
+                <label
+                for="profileImage"
+                class="upload-btn">
+
+                    Upload Profile Photo
+
+                </label>
+
+                <h2>
+                    Sean Arthur
+                </h2>
+
+                <span>
+                    Fan User
+                </span>
+
+            </div>
+
+            <!-- FORM -->
+
+            <form class="profile-form">
+
+                <div class="row">
+
+                    <div class="form-group">
+
+                        <label>
+                            First Name
+                        </label>
+
+                        <input
+                        type="text"
+                        value="Sean">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>
+                            Last Name
+                        </label>
+
+                        <input
+                        type="text"
+                        value="Arthur">
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Agent ID
+                    </label>
+
+                    <input
+                    type="text"
+                    value="agent001"
+                    readonly>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Email
+                    </label>
+
+                    <input
+                    type="email"
+                    value="sean@gmail.com">
+
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+
+                    <label>
+                        New Password
+                    </label>
+
+                    <input
+                    type="password"
+                    placeholder="Enter new password">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Confirm Password
+                    </label>
+
+                    <input
+                    type="password"
+                    placeholder="Confirm new password">
+
+                </div>
+
+                <button
+                type="submit"
+                class="save-btn">
+
+                    Save Changes
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="../../global/app.js?v=20260612-44"></script>
+<script src="./my-profile.js?v=20260612-16"></script>
+
+</body>
+</html>

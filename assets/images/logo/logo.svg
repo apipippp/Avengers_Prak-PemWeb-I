@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Avengers WikiVerse">
+  <rect width="128" height="128" rx="24" fill="#10182f"/>
+  <circle cx="64" cy="64" r="48" fill="none" stroke="#ffc400" stroke-width="8"/>
+  <path d="M64 23 95 105H78l-6-18H47l-6 18H24L55 23h9Zm-12 50h16L60 47l-8 26Z" fill="#ff4655"/>
+  <path d="M88 35h17v58H88z" fill="#6f52ff"/>
+</svg>
+

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Community Room | Avengers WikiVerse</title>
+
+<link rel="stylesheet" href="../../css/global.css?v=20260612-34">
+<link rel="stylesheet" href="./community-room.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <img src="../../assets/images/logo/logoo.jpg">
+
+            <span>
+                AVENGERS WIKIVERSE
+            </span>
+
+        </div>
+
+        <nav>
+
+            <a href="../dashboard/dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="../heroes-wiki/heroes-wiki.html">
+                Heroes Wiki
+            </a>
+
+            <a href="../movie-archive/movie-archive.html">
+                Movie Archive
+            </a>
+
+            <a class="active" href="#">
+                Community Room
+            </a>
+
+            <a href="../my-profile/my-profile.html">
+                My Profile
+            </a>
+
+            <a href="../user-settings/user-settings.html">
+                Settings
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <!-- CONTENT -->
+
+    <main class="content">
+
+        <header class="topbar">
+
+            <input
+            type="text"
+            placeholder="Search discussion...">
+
+            <div class="top-actions">
+
+                <div class="notification">
+
+                    🔔
+
+                    <div class="notif-dropdown">
+
+                        <p>New Hero Added</p>
+                        <p>Community Event Started</p>
+                        <p>Movie Archive Updated</p>
+
+                    </div>
+
+                </div>
+
+                <div
+                class="profile"
+                onclick="goProfile()">
+
+                    <div class="navbar-avatar">
+
+                        <img
+                        src="../../assets/images/user-profile/profile-default.png"
+                        alt="Profile">
+
+                    </div>
+
+                    <span>
+                        Sean Arthur
+                    </span>
+
+                </div>
+
+                <button class="logout-btn">
+                    Logout
+                </button>
+
+            </div>
+
+        </header>
+
+        <!-- HEADER -->
+
+        <section class="page-header">
+
+            <div>
+
+                <h1>
+                    Community Room
+                </h1>
+
+                <p>
+                    Discuss theories, heroes and MCU events
+                </p>
+
+            </div>
+
+            <button class="create-post-btn">
+
+                + Create Post
+
+            </button>
+
+        </section>
+
+        <!-- CREATE POST -->
+
+        <section class="create-post is-hidden">
+
+            <input
+            type="text"
+            id="postTitle"
+            placeholder="Post title">
+
+            <select id="postCategory">
+                <option>Discussion</option>
+                <option>Theory</option>
+                <option>Review</option>
+            </select>
+
+            <textarea
+            id="postBody"
+            placeholder="Share your Marvel theory..."></textarea>
+
+            <button>
+                Publish Post
+            </button>
+
+        </section>
+
+        <!-- FILTER -->
+
+        <section class="filters">
+
+            <button class="active">
+                All Posts
+            </button>
+
+            <button>
+                Discussion
+            </button>
+
+            <button>
+                Theory
+            </button>
+
+            <button>
+                Review
+            </button>
+
+        </section>
+
+        <!-- POSTS -->
+
+        <section class="posts">
+
+            <article class="post-card">
+
+                <div class="post-header">
+
+                    <div class="user-info">
+
+                        <div class="navbar-avatar">
+
+                            <img
+                            src="../../assets/images/user-profile/profile-default.png"
+                            alt="Profile">
+
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                Sean Arthur
+                            </h4>
+
+                            <small>
+                                2 hours ago
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <h3>
+                    Could Kang Return After Secret Wars?
+                </h3>
+
+                <p>
+                    I think Marvel still has plans for Kang
+                    despite recent storyline changes...
+                </p>
+
+                <div class="post-actions">
+
+                    <button>
+                        👍 125
+                    </button>
+
+                    <button>
+                        💬 31
+                    </button>
+
+                </div>
+
+            </article>
+
+            <article class="post-card">
+
+                <div class="post-header">
+
+                    <div class="user-info">
+
+                        <div class="navbar-avatar">
+
+                            <img
+                            src="../../assets/images/user-profile/profile-default.png"
+                            alt="Profile">
+
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                IronManFan
+                            </h4>
+
+                            <small>
+                                5 hours ago
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <h3>
+                    Best Iron Man Armor?
+                </h3>
+
+                <p>
+                    Which suit do you think is the greatest
+                    Iron Man armor ever created?
+                </p>
+
+                <div class="post-actions">
+
+                    <button>
+                        👍 89
+                    </button>
+
+                    <button>
+                        💬 17
+                    </button>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../../global/app.js?v=20260612-44"></script>
+<script src="./community-room.js?v=20260612-16"></script>
+
+</body>
+</html>

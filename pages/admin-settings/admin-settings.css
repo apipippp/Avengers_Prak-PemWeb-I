@@ -1,0 +1,178 @@
+body{
+    background:#07101f;
+    color:white;
+    font-family:'Barlow Condensed',sans-serif;
+}
+
+.container{
+    display:flex;
+}
+
+.sidebar{
+    width:260px;
+    min-height:100vh;
+    background:#0d1528;
+    padding:25px;
+}
+
+.sidebar-logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:40px;
+}
+
+.sidebar-logo img{
+    width:40px;
+}
+
+.sidebar-logo span{
+    color:#ffc400;
+    font-weight:700;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.sidebar nav a{
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-radius:10px;
+}
+
+.sidebar nav a.active{
+    background:#1b2644;
+}
+
+.content{
+    flex:1;
+    padding:30px;
+}
+
+.page-header{
+    margin-bottom:25px;
+}
+
+.page-header p{
+    color:#9aa8c4;
+}
+
+.settings-card{
+    background:#10182f;
+    border-radius:15px;
+    padding:30px;
+}
+
+.setting-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.setting-row p{
+    color:#9aa8c4;
+}
+
+.switch{
+    position:relative;
+    width:60px;
+    height:30px;
+}
+
+.switch input{
+    display:none;
+}
+
+.slider{
+    position:absolute;
+    inset:0;
+    background:#2a365c;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.slider::before{
+    content:"";
+    position:absolute;
+    width:24px;
+    height:24px;
+    left:3px;
+    top:3px;
+    background:white;
+    border-radius:50%;
+    transition:.3s;
+}
+
+input:checked + .slider{
+    background:#ffc400;
+}
+
+input:checked + .slider::before{
+    transform:translateX(30px);
+}
+
+hr{
+    border:1px solid #1b2644;
+    margin:25px 0;
+}
+
+.logout-btn{
+    border:none;
+    background:#4f8cff;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.delete-btn{
+    border:none;
+    background:#ff4655;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.modal{
+    display:none;
+
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.6);
+
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    background:#10182f;
+    padding:30px;
+    width:400px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.modal-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+.modal-buttons button{
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#confirmBtn{
+    background:#ff4655;
+    color:white;
+}

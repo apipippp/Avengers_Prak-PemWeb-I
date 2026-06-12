@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Manage Users | Avengers WikiVerse</title>
+
+<link rel="stylesheet" href="../../css/global.css?v=20260612-34">
+<link rel="stylesheet" href="./admin-manage-users.css?v=20260612-38">
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <img src="../../assets/images/logo/logoo.jpg">
+
+            <span>
+                AVENGERS WIKIVERSE
+            </span>
+
+        </div>
+
+        <nav>
+
+            <a href="../admin-dashboard/admin-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="../admin-add-hero/admin-add-hero.html">
+                Add Hero
+            </a>
+
+            <a href="../admin-add-movie/admin-add-movie.html">
+                Add Movie
+            </a>
+
+            <a class="active" href="#">
+                Manage Users
+            </a>
+
+            <a href="../admin-manage-posts/admin-manage-posts.html">
+                Manage Posts
+            </a>
+
+            <a href="../admin-settings/admin-settings.html">
+                Settings
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <div class="page-header">
+
+            <div>
+
+                <h1>
+                    Manage Users
+                </h1>
+
+                <p>
+                    Manage user and admin accounts
+                </p>
+
+            </div>
+
+            <input
+            type="text"
+            placeholder="Search users...">
+
+        </div>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>User</th>
+                        <th>Username</th>
+                        <th>Role</th>
+                        <th>Joined</th>
+                        <th>Posts</th>
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+
+                            <img
+                            src="../../assets/images/user-profile/profile-default.png"
+                            class="user-photo">
+
+                        </td>
+
+                        <td>agent001</td>
+
+                        <td>Sean Arthur</td>
+
+                        <td>sean@gmail.com</td>
+
+                        <td>
+
+                            <span class="role user">
+
+                                User
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <span class="status active">
+
+                                Active
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="ban-btn">
+
+                                Ban
+
+                            </button>
+
+                            <button class="delete-btn">
+
+                                Delete
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+
+                            <img
+                            src="../../assets/images/user-profile/profile-default.png"
+                            class="user-photo">
+
+                        </td>
+
+                        <td>admin002</td>
+
+                        <td>Bruce Banner</td>
+
+                        <td>banner@gmail.com</td>
+
+                        <td>
+
+                            <span class="role admin">
+
+                                Admin
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <span class="status active">
+
+                                Active
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="delete-btn">
+
+                                Delete
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+
+                            <img
+                            src="../../assets/images/user-profile/profile-default.png"
+                            class="user-photo">
+
+                        </td>
+
+                        <td>agent777</td>
+
+                        <td>Tony Stark</td>
+
+                        <td>tony@gmail.com</td>
+
+                        <td>
+
+                            <span class="role user">
+
+                                User
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <span class="status banned">
+
+                                Banned
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="unban-btn">
+
+                                Unban
+
+                            </button>
+
+                            <button class="delete-btn">
+
+                                Delete
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="../../global/app.js?v=20260612-44"></script>
+<script src="./admin-manage-users.js?v=20260612-38"></script>
+
+</body>
+</html>

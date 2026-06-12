@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Settings | Avengers WikiVerse</title>
+
+<link rel="stylesheet" href="../../css/global.css?v=20260612-34">
+<link rel="stylesheet" href="./user-settings.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <img
+            src="../../assets/images/logo/logoo.jpg"
+            alt="Logo">
+
+            <span>
+                AVENGERS WIKIVERSE
+            </span>
+
+        </div>
+
+        <nav>
+
+            <a href="../dashboard/dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="../heroes-wiki/heroes-wiki.html">
+                Heroes Wiki
+            </a>
+
+            <a href="../movie-archive/movie-archive.html">
+                Movie Archive
+            </a>
+
+            <a href="../community-room/community-room.html">
+                Community Room
+            </a>
+
+            <a href="../my-profile/my-profile.html">
+                My Profile
+            </a>
+
+            <a class="active" href="#">
+                Settings
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <!-- CONTENT -->
+
+    <main class="content">
+
+        <div class="page-header">
+
+            <h1>
+                Settings
+            </h1>
+
+            <p>
+                Manage your account preferences
+            </p>
+
+        </div>
+
+        <div class="settings-card">
+
+            <div class="setting-row">
+
+                <div>
+
+                    <h3>
+                        Mute Notifications
+                    </h3>
+
+                    <p>
+                        Disable notification dropdown alerts
+                    </p>
+
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox" id="muteNotifications">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+            <hr>
+
+            <div class="setting-row">
+
+                <div>
+
+                    <h3>
+                        Logout
+                    </h3>
+
+                    <p>
+                        Sign out from Avengers WikiVerse
+                    </p>
+
+                </div>
+
+                <button class="logout-btn">
+
+                    Logout
+
+                </button>
+
+            </div>
+
+            <hr>
+
+            <div class="setting-row">
+
+                <div>
+
+                    <h3>
+                        Delete Account
+                    </h3>
+
+                    <p>
+                        Permanently delete your account
+                    </p>
+
+                </div>
+
+                <button
+                id="deleteBtn"
+                class="delete-btn">
+
+                    Delete Account
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<!-- MODAL -->
+
+<div
+id="deleteModal"
+class="modal">
+
+    <div class="modal-content">
+
+        <h2>
+            Delete Account
+        </h2>
+
+        <p>
+            This action cannot be undone.
+            Are you sure?
+        </p>
+
+        <div class="modal-buttons">
+
+            <button id="cancelBtn">
+
+                Cancel
+
+            </button>
+
+            <button id="confirmBtn">
+
+                Delete
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../../global/app.js?v=20260612-44"></script>
+<script src="./user-settings.js?v=20260612-16"></script>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+body{
+    background:#07101f;
+    color:white;
+    font-family:'Barlow Condensed',sans-serif;
+}
+
+.container{
+    display:flex;
+}
+
+.sidebar{
+    width:260px;
+    min-height:100vh;
+    background:#0d1528;
+    padding:25px;
+}
+
+.sidebar-logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:40px;
+}
+
+.sidebar-logo img{
+    width:40px;
+}
+
+.sidebar-logo span{
+    color:#ffc400;
+    font-weight:700;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.sidebar nav a{
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-radius:10px;
+}
+
+.sidebar nav a.active{
+    background:#1b2644;
+}
+
+.content{
+    flex:1;
+    padding:30px;
+}
+
+.back-btn{
+    text-decoration:none;
+    color:#ffc400;
+}
+
+.movie-header{
+    display:flex;
+    gap:30px;
+    margin-top:20px;
+    margin-bottom:25px;
+}
+
+.poster{
+    width:320px;
+    height:450px;
+    background:#1b2644;
+    border-radius:15px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.movie-info h1{
+    font-size:60px;
+    margin:10px 0 20px;
+}
+
+.phase{
+    color:#ffc400;
+}
+
+.movie-info p{
+    margin-bottom:12px;
+}
+
+.detail-card{
+    background:#10182f;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:25px;
+}
+
+.detail-card h2{
+    margin-bottom:15px;
+}
+
+
+.content{
+    flex:1;
+    padding:30px;
+}
+
+.back-btn{
+    text-decoration:none;
+    color:#ffc400;
+}
+
+.movie-header{
+    display:flex;
+    gap:30px;
+    margin-top:20px;
+    margin-bottom:25px;
+}
+
+.poster{
+    width:320px;
+    height:450px;
+    background:#1b2644;
+    border-radius:15px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.movie-info h1{
+    font-size:60px;
+    margin:10px 0 20px;
+}
+
+.phase{
+    color:#ffc400;
+}
+
+.movie-info p{
+    margin-bottom:12px;
+}
+
+.detail-card{
+    background:#10182f;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:25px;
+}
+
+.detail-card h2{
+    margin-bottom:15px;
+}
+
+.heroes{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.heroes span{
+    background:#1b2644;
+    padding:10px 15px;
+    border-radius:20px;
+}
+
+@media(max-width:980px){
+    .movie-header{
+        flex-direction:column;
+        align-items:stretch;
+        gap:20px;
+    }
+
+    .poster{
+        width:min(320px, 100%);
+        height:auto;
+        aspect-ratio:320/450;
+        margin:0 auto;
+    }
+
+    .movie-info{
+        text-align:center;
+    }
+
+    .movie-info h1{
+        font-size:36px;
+        margin:10px 0;
+    }
+}

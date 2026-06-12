@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 800" role="img" aria-label="Movie placeholder">
+  <defs>
+    <linearGradient id="m" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#07101f"/>
+      <stop offset=".55" stop-color="#1b2644"/>
+      <stop offset="1" stop-color="#ff4655"/>
+    </linearGradient>
+  </defs>
+  <rect width="540" height="800" rx="22" fill="url(#m)"/>
+  <rect x="65" y="95" width="410" height="250" rx="18" fill="#10182f" stroke="#ffc400" stroke-width="8"/>
+  <path d="M205 150v140l120-70-120-70Z" fill="#ffc400"/>
+  <rect x="90" y="430" width="360" height="24" rx="12" fill="#c9d2e6"/>
+  <rect x="120" y="485" width="300" height="18" rx="9" fill="#6f52ff"/>
+  <rect x="150" y="530" width="240" height="18" rx="9" fill="#ff4655"/>
+  <text x="270" y="715" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">MOVIE ARCHIVE</text>
+</svg>
+

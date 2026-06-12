@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Add Hero | Avengers WikiVerse</title>
+
+<link rel="stylesheet" href="../../css/global.css?v=20260612-34">
+<link rel="stylesheet" href="./admin-add-hero.css?v=20260612-38">
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <img
+            src="../../assets/images/logo/logoo.jpg"
+            alt="Logo">
+
+            <span>
+                AVENGERS WIKIVERSE
+            </span>
+
+        </div>
+
+        <nav></nav>
+
+    </aside>
+
+    <!-- CONTENT -->
+
+    <main class="content">
+
+        <div class="page-header">
+
+            <a href="../admin-manage-heroes/admin-manage-heroes.html" class="back-btn-link">← Back</a>
+
+            <h1>
+                Add New Hero
+            </h1>
+
+            <p>
+                Create a new hero profile for Avengers Wiki
+            </p>
+
+        </div>
+
+        <form class="hero-form">
+
+            <!-- PHOTO -->
+
+            <div class="upload-area">
+
+                <img
+                id="previewHero"
+                src="../../assets/images/placeholders/hero.svg"
+                alt="Hero">
+
+                <input
+                type="file"
+                id="heroImage"
+                accept="image/*">
+
+                <label
+                for="heroImage"
+                class="upload-btn">
+
+                    Upload Hero Image
+
+                </label>
+
+            </div>
+
+            <!-- FORM -->
+
+            <div class="form-group">
+
+                <label>
+                    Hero Name
+                </label>
+
+                <input
+                name="name"
+                type="text"
+                placeholder="Iron Man">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+                    Real Name
+                </label>
+
+                <input
+                name="realName"
+                type="text"
+                placeholder="Tony Stark">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+                    Team
+                </label>
+
+                <input
+                name="team"
+                type="text"
+                placeholder="Avengers">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+                    Powers
+                </label>
+
+                <textarea
+                name="powers"
+                placeholder="Describe hero powers"></textarea>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+                    Biography
+                </label>
+
+                <textarea
+                name="biography"
+                placeholder="Hero biography"></textarea>
+
+            </div>
+
+            <button
+            type="submit"
+            class="submit-btn">
+
+                Save Hero
+
+            </button>
+
+            <a href="../admin-manage-heroes/admin-manage-heroes.html" class="cancel-btn">Cancel</a>
+
+        </form>
+
+    </main>
+
+</div>
+
+<script src="../../global/app.js?v=20260612-44"></script>
+<script src="./admin-add-hero.js?v=20260612-40"></script>
+
+</body>
+</html>

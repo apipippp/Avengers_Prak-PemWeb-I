@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | Avengers WikiVerse</title>
+
+<link rel="stylesheet" href="../../css/global.css?v=20260612-34">
+<link rel="stylesheet" href="./admin-dashboard.css?v=20260612-40">
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <img
+            src="../../assets/images/logo/logoo.jpg"
+            alt="Logo">
+
+            <span>
+                AVENGERS WIKIVERSE
+            </span>
+
+        </div>
+
+        <nav></nav>
+
+    </aside>
+
+    <!-- CONTENT -->
+
+    <main class="content">
+
+        <header class="topbar">
+            <input type="text" placeholder="Search ...">
+
+            <div class="admin-profile">
+                <div>
+                    <h4>Admin</h4>
+                    <small>Admin</small>
+                </div>
+            </div>
+        </header>
+
+        <section class="admin-title">
+            <h1>⚙ Admin Panel</h1>
+            <span>Admin Access</span>
+        </section>
+
+        <!-- STATS -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card stat-blue">
+
+                <h2>247</h2>
+
+                <p>
+                    Total Heroes
+                </p>
+
+                <span class="stat-growth"></span>
+
+            </div>
+
+            <div class="stat-card stat-gold">
+
+                <h2>89</h2>
+
+                <p>
+                    Total Movies
+                </p>
+
+                <span class="stat-growth"></span>
+
+            </div>
+
+            <div class="stat-card stat-green">
+
+                <h2>15,200</h2>
+
+                <p>
+                    Total Post
+                </p>
+
+                <span class="stat-growth"></span>
+
+            </div>
+
+            <div class="stat-card stat-red">
+
+                <h2>12,400</h2>
+
+                <p>
+                    Total Users
+                </p>
+
+                <span class="stat-growth"></span>
+
+            </div>
+
+        </section>
+
+        <nav class="admin-tabs">
+            <a class="active" href="../admin-manage-heroes/admin-manage-heroes.html">Heroes</a>
+            <a href="../admin-manage-movies/admin-manage-movies.html">Movies</a>
+            <a href="../admin-manage-posts/admin-manage-posts.html">Posts</a>
+            <a href="../admin-manage-users/admin-manage-users.html">Users</a>
+        </nav>
+
+        <section class="admin-list">
+            <div class="list-header">
+                <h2>📋 Heroes List</h2>
+                <div class="list-tools">
+                    <input type="text" placeholder="Search Heroes..." class="hero-search">
+                    <a href="../admin-add-hero/admin-add-hero.html">+ Add Hero</a>
+                </div>
+            </div>
+
+            <div class="admin-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Hero</th>
+                            <th>Affiliation</th>
+                            <th>Power Level</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td colspan="5">Loading heroes...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../../global/app.js?v=20260612-44"></script>
+<script src="./admin-dashboard.js?v=20260612-39"></script>
+
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | Avengers WikiVerse</title>
+
+<link rel="stylesheet" href="../../css/global.css?v=20260612-34">
+<link rel="stylesheet" href="./dashboard.css?v=20260612-25">
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <img
+            src="../../assets/images/logo/logoo.jpg"
+            alt="logo">
+
+            <span>AVENGERS WIKIVERSE</span>
+
+        </div>
+
+        <nav>
+
+            <a class="active" href="#">
+                Dashboard
+            </a>
+
+            <a href="../heroes-wiki/heroes-wiki.html">
+                Heroes Wiki
+            </a>
+
+            <a href="../movie-archive/movie-archive.html">
+                Movie Archive
+            </a>
+
+            <a href="../community-room/community-room.html">
+                Community Room
+            </a>
+
+            <a href="../my-profile/my-profile.html">
+                My Profile
+            </a>
+
+            <a href="../user-settings/user-settings.html">
+                Settings
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <!-- MAIN -->
+
+    <main class="main-content">
+
+        <!-- NAVBAR -->
+
+        <header class="topbar">
+
+            <div class="search-box">
+
+                <input
+                type="text"
+                placeholder="Search heroes, movies, events...">
+
+            </div>
+
+            <div class="topbar-right">
+
+                <div class="notification">
+
+                    🔔
+
+                    <div class="notification-dropdown">
+
+                        <div class="notif-item">
+                            New hero profile added
+                        </div>
+
+                        <div class="notif-item">
+                            Iron Man updated
+                        </div>
+
+                        <div class="notif-item">
+                            New movie archived
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div
+                class="profile"
+                onclick="goProfile()">
+
+                    <div class="navbar-avatar">
+
+                        <img
+                        src="../../assets/images/user-profile/profile-default.png"
+                        alt="Profile">
+
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Sean Arthur
+                        </h4>
+
+                        <small>
+                            Fan User
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <button class="logout-btn">
+                    Logout
+                </button>
+
+            </div>
+
+        </header>
+
+        <!-- WELCOME -->
+
+        <section class="welcome-card">
+
+            <div>
+
+                <h1>
+                    Welcome back,
+                    Sean Arthur
+                </h1>
+
+                <p>
+                    Login Time :
+                    09:41 AM
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- STATS -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card stat-heroes">
+
+                <div>
+
+                    <p>Heroes Indexed</p>
+                    <h3>0</h3>
+                    <small>Live database</small>
+
+                </div>
+
+                <span class="stat-icon">?</span>
+
+            </div>
+
+            <div class="stat-card stat-movies">
+
+                <div>
+
+                    <p>Movies / Missions</p>
+                    <h3>0</h3>
+                    <small>Archive synced</small>
+
+                </div>
+
+                <span class="stat-icon">M</span>
+
+            </div>
+
+            <div class="stat-card stat-posts">
+
+                <div>
+
+                    <p>Community Post</p>
+                    <h3>0</h3>
+                    <small>Room activity</small>
+
+                </div>
+
+                <span class="stat-icon">C</span>
+
+            </div>
+
+            <div class="stat-card stat-agents">
+
+                <div>
+
+                    <p>Active Agents</p>
+                    <h3>0</h3>
+                    <small>Online roster</small>
+
+                </div>
+
+                <span class="stat-icon">A</span>
+
+            </div>
+
+        </section>
+
+        <!-- HERO OF WEEK -->
+
+        <section class="hero-week">
+
+            <div class="hero-image">
+
+                FOTO HERO OF WEEK
+
+            </div>
+
+            <div class="hero-info">
+
+                <span class="badge">
+                    HERO OF THE WEEK
+                </span>
+
+                <h2>Iron Man</h2>
+
+                <p>
+                    Genius. Billionaire.
+                    Playboy. Philanthropist.
+                </p>
+
+                <div class="buttons">
+
+                    <a
+                    href="../hero-profile/hero-profile.html"
+                    class="primary-btn">
+
+                        View Profile
+
+                    </a>
+
+                    <button class="secondary-btn">
+
+                        Add Favorite
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- RECENT HEROES -->
+
+        <section class="section">
+
+            <div class="section-header">
+
+                <h2>
+                    Recently Updated Heroes
+                </h2>
+
+            </div>
+
+            <div class="hero-grid">
+
+                <div class="hero-card">
+
+                    <div class="hero-photo">
+                        FOTO THOR
+                    </div>
+
+                    <h3>Thor</h3>
+
+                    <a
+                    href="../hero-profile/hero-profile.html">
+
+                        View Profile
+
+                    </a>
+
+                </div>
+
+                <div class="hero-card">
+
+                    <div class="hero-photo">
+                        FOTO HULK
+                    </div>
+
+                    <h3>Hulk</h3>
+
+                    <a
+                    href="../hero-profile/hero-profile.html">
+
+                        View Profile
+
+                    </a>
+
+                </div>
+
+                <div class="hero-card">
+
+                    <div class="hero-photo">
+                        FOTO BLACK WIDOW
+                    </div>
+
+                    <h3>Black Widow</h3>
+
+                    <a
+                    href="../hero-profile/hero-profile.html">
+
+                        View Profile
+
+                    </a>
+
+                </div>
+
+                <div class="hero-card">
+
+                    <div class="hero-photo">
+                        FOTO CAPTAIN MARVEL
+                    </div>
+
+                    <h3>Captain Marvel</h3>
+
+                    <a
+                    href="../hero-profile/hero-profile.html">
+
+                        View Profile
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- MOVIES -->
+
+        <section class="section">
+
+            <div class="section-header">
+
+                <h2>
+                    Latest Movie Added
+                </h2>
+
+            </div>
+
+            <div class="movie-grid">
+
+                <div class="movie-card">
+
+                    <div class="movie-poster">
+
+                        POSTER
+
+                    </div>
+
+                    <h3>
+                        Avengers Infinity War
+                    </h3>
+
+                    <a
+                    href="../movie-detail/movie-detail.html">
+
+                        View Detail
+
+                    </a>
+
+                </div>
+
+                <div class="movie-card">
+
+                    <div class="movie-poster">
+
+                        POSTER
+
+                    </div>
+
+                    <h3>
+                        Doctor Strange MoM
+                    </h3>
+
+                    <a
+                    href="../movie-detail/movie-detail.html">
+
+                        View Detail
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../../global/app.js?v=20260612-44"></script>
+<script src="./dashboard.js?v=20260612-25"></script>
+
+</body>
+</html>

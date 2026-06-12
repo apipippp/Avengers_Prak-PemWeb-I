@@ -1,0 +1,214 @@
+body{
+    background:#07101f;
+    color:white;
+    font-family:'Barlow Condensed',sans-serif;
+}
+
+.container{
+    display:flex;
+}
+
+.sidebar{
+    width:260px;
+    min-height:100vh;
+    background:#0d1528;
+    padding:25px;
+}
+
+.sidebar-logo{
+    display:flex;
+    gap:10px;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.sidebar-logo img{
+    width:40px;
+}
+
+.sidebar-logo span{
+    color:#ffc400;
+    font-weight:700;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.sidebar nav a{
+    text-decoration:none;
+    color:white;
+    padding:12px;
+    border-radius:10px;
+}
+
+.sidebar nav a.active{
+    background:#1b2644;
+}
+
+.content{
+    flex:1;
+    padding:30px;
+}
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:30px;
+}
+
+.topbar input{
+    width:400px;
+    height:45px;
+    border:none;
+    border-radius:10px;
+    padding:0 15px;
+    background:#10182f;
+    color:white;
+}
+
+.top-actions{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.notification{
+    position:relative;
+    cursor:pointer;
+}
+
+.notif-dropdown{
+    display:none;
+    position:absolute;
+    top:30px;
+    right:0;
+    width:220px;
+    background:#10182f;
+    border-radius:10px;
+}
+
+.notif-dropdown p{
+    padding:12px;
+}
+
+.notification:hover .notif-dropdown{
+    display:block;
+}
+
+.avatar{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#ffc400;
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logout-btn{
+    background:#ff4655;
+    color:white;
+    border:none;
+    padding:10px 16px;
+    border-radius:8px;
+}
+
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.movie-count{
+    color:#ffc400;
+}
+
+.filters{
+    display:flex;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.filters button{
+    border:none;
+    padding:10px 16px;
+    border-radius:20px;
+    background:#10182f;
+    color:white;
+}
+
+.filters button.active{
+    background:#ffc400;
+    color:black;
+}
+
+.movie-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.movie-card{
+    background:#10182f;
+    padding:15px;
+    border-radius:15px;
+}
+
+.movie-poster{
+    height:260px;
+    background:#1b2644;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.movie-card small{
+    color:#8ea0c5;
+}
+
+.movie-card p{
+    margin:10px 0;
+}
+
+.movie-card a{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    color:white;
+    padding:10px;
+    border-radius:8px;
+    background:linear-gradient(
+        90deg,
+        #ff4655,
+        #6f52ff
+    );
+}
+
+.navbar-avatar{
+    width:40px;
+    height:40px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+}
+
+.navbar-avatar img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}

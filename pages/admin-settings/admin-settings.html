@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Settings | Avengers WikiVerse</title>
+
+<link rel="stylesheet" href="../../css/global.css?v=20260612-34">
+<link rel="stylesheet" href="./admin-settings.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <img
+            src="../../assets/images/logo/logoo.jpg"
+            alt="Logo">
+
+            <span>
+                AVENGERS WIKIVERSE
+            </span>
+
+        </div>
+
+        <nav>
+
+            <a href="../admin-dashboard/admin-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="../admin-add-hero/admin-add-hero.html">
+                Add Hero
+            </a>
+
+            <a href="../admin-add-movie/admin-add-movie.html">
+                Add Movie
+            </a>
+
+            <a href="../admin-manage-users/admin-manage-users.html">
+                Manage Users
+            </a>
+
+            <a href="../admin-manage-posts/admin-manage-posts.html">
+                Manage Posts
+            </a>
+
+            <a class="active" href="#">
+                Settings
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <div class="page-header">
+
+            <h1>
+                Admin Settings
+            </h1>
+
+            <p>
+                Manage administrator account
+            </p>
+
+        </div>
+
+        <div class="settings-card">
+
+            <div class="setting-row">
+
+                <div>
+
+                    <h3>
+                        Mute Notifications
+                    </h3>
+
+                    <p>
+                        Hide admin notification dropdown alerts
+                    </p>
+
+                </div>
+
+                <label class="switch">
+
+                    <input
+                    type="checkbox"
+                    id="muteNotifications">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+            <hr>
+
+            <div class="setting-row">
+
+                <div>
+
+                    <h3>
+                        Logout
+                    </h3>
+
+                    <p>
+                        Sign out from administrator account
+                    </p>
+
+                </div>
+
+                <button class="logout-btn">
+
+                    Logout
+
+                </button>
+
+            </div>
+
+            <hr>
+
+            <div class="setting-row">
+
+                <div>
+
+                    <h3>
+                        Delete Account
+                    </h3>
+
+                    <p>
+                        Permanently remove this admin account
+                    </p>
+
+                </div>
+
+                <button
+                id="deleteBtn"
+                class="delete-btn">
+
+                    Delete Account
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<div
+id="deleteModal"
+class="modal">
+
+    <div class="modal-content">
+
+        <h2>
+            Delete Admin Account
+        </h2>
+
+        <p>
+            This action cannot be undone.
+            Continue?
+        </p>
+
+        <div class="modal-buttons">
+
+            <button id="cancelBtn">
+
+                Cancel
+
+            </button>
+
+            <button id="confirmBtn">
+
+                Delete
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../../global/app.js?v=20260612-44"></script>
+<script src="./admin-settings.js?v=20260612-16"></script>
+
+</body>
+</html>
